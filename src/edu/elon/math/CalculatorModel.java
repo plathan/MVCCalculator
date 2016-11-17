@@ -18,7 +18,7 @@ import javax.script.ScriptException;
  * @author Patrick Lathan
  * @author Alex Zaterka
  */
-public class CalculatorModel implements CalculatorModelInterface {
+public class CalculatorModel implements CalculatorModelInterface, CalculatorObservable {
   String inputString = "";
   ArrayList<CalculatorObserver> calculatorObservers = new ArrayList<CalculatorObserver>();
   ScriptEngine engine = (new ScriptEngineManager())
