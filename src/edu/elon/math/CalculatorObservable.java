@@ -19,4 +19,16 @@ public interface CalculatorObservable {
    * updateInputField() method.
    */
   public void notifyCalculatorObservers();
+  
+  /**
+   * @param o
+   *        Registers an observer (the view) to the observable (model)
+   */
+  void registerObserver(CalculatorObserver o);
+
+  /**
+   * @param o
+   *        Removes specified observer from the model
+   */
+  void removeObserver(CalculatorObserver o);
 }
