@@ -13,11 +13,6 @@ package edu.elon.math;
  * @author Alex Zaterka
  */
 public interface CalculatorControllerInterface {
-  /**
-   * @param inputString
-   *        setInput replaces the existing inputString with a new one
-   */
-  void setInput(String inputString);
 
   /**
    * @param inputString
@@ -26,13 +21,6 @@ public interface CalculatorControllerInterface {
    *        inputString rather than replacing it
    */
   void addInput(String inputString);
-
-  /**
-   * @return inputString
-   * 
-   *         getInput returns the value currently held in inputString
-   */
-  String getInput();
 
   /**
    * @param inputString

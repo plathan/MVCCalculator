@@ -45,14 +45,4 @@ public class CalculatorController implements CalculatorControllerInterface {
     }
   }
 
-  @Override
-  public String getInput() {
-    return model.getInput();
-  }
-
-  @Override
-  public void setInput(String inputString) {
-    model.setInput(inputString);
-  }
-
 }
