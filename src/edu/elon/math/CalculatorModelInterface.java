@@ -31,4 +31,16 @@ public interface CalculatorModelInterface {
    *        Performs calculations on current value of inputString
    */
   void evaluate(String inputString);
+
+  /**
+   * @param o
+   *        Registers an observer (the view) to the observable (model)
+   */
+  void registerObserver(CalculatorObserver o);
+
+  /**
+   * @param o
+   *        Removes specified observer from the model
+   */
+  void removeObserver(CalculatorObserver o);
 }
